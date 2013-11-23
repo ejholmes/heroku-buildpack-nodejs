@@ -170,6 +170,7 @@ cp "$VENDORED_NODE/bin/node" "$BUILD_DIR/bin/node"
 
 # vendor node into the slug
 echo "-----> Vendoring npm into slug"
+mkdir -p "$BUILD_DIR/node_modules"
 cp -r "$VENDORED_NPM" "$BUILD_DIR/node_modules/npm"
 
 # setting up paths for building
